@@ -26,22 +26,8 @@ export const alex = {
 
 export const App = () => (
   <>
-    <Person
-      person={{
-        name: 'My name is Misha',
-        age: 'I am 37',
-        partner: 'Natasha is my wife',
-      }}
-    />
-    <Person
-      person={{ name: 'My name is Olya', partner: 'Maksym is my husband' }}
-    />
-    <Person
-      person={{
-        name: 'My name is Alex',
-        age: 'I am 25',
-        partner: 'I am not married',
-      }}
-    />
+    <Person person={misha} />
+    <Person person={olya} />
+    <Person person={alex} />
   </>
 );
