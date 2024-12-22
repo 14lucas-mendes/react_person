@@ -1,10 +1,10 @@
 /* eslint-disable no-nested-ternary */
 export const Person = ({ person }) => (
   <section className="Person">
-    <h2 className="Person_name">{person.name}</h2>
-    <p className="Person_age">{person.age ? person.age : undefined}</p>
-    <p className="Person_sex">{person.sex}</p>
-    <p className="Person_isMarried">
+    <h2 className="Person__name">{person.name}</h2>
+    <p className="Person__age">{person.age ? person.age : undefined}</p>
+    <p className="Person__sex">{person.sex}</p>
+    <p className="Person__isMarried">
       {person.isMarried
         ? person.sex === 'm'
           ? `${person.partnerName} is my wife`
@@ -12,7 +12,7 @@ export const Person = ({ person }) => (
         : 'Not married'}
     </p>
     {person.partnerName && (
-      <p className="Person_partner">Partner: {person.partnerName}</p>
+      <p className="Person__partner">Partner: {person.partnerName}</p>
     )}
   </section>
 );
