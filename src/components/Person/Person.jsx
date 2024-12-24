@@ -9,7 +9,7 @@ export const Person = ({ person }) => (
         ? person.sex === 'm'
           ? `${person.partnerName} is my wife`
           : `${person.partnerName} is my husband`
-        : 'Not married'}
+        : 'I am not married'}
     </p>
     {person.partnerName && (
       <p className="Person__partner">Partner: {person.partnerName}</p>
