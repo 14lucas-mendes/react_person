@@ -18,7 +18,7 @@ export const Person = ({ person }) => (
         ? person.sex === 'm'
           ? `${person.partnerName} is my wife`
           : `${person.partnerName} is my husband`
-        : 'No partner information available'}
+        : 'not married'}
     </p>
   </section>
 );
